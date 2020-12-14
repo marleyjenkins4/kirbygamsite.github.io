@@ -1,0 +1,389 @@
+.kirby{
+    display:flex;
+  
+    position: absolute;
+    height: 1354px;
+    left: 0px;
+    top: -44px;
+    object-fit:cover;
+    object-position:50% 50%;
+    background-image:url(../images/character_pages/background_stars.png);
+    background-size: 100%;
+    background-repeat:no-repeat;
+  padding:0px;
+  margin:0px;
+  }
+  @import "reset";
+
+@font-face {
+    font-family: 'Kirby Classic';
+    src: url(../fonts/kirby-classic2.eot);
+    src: url(../fonts/kirby-classic2.ttf);
+  }
+  html
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+  
+  }
+   body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+  
+
+   }
+   .meta_button{
+    display:flex;
+    background-image:url(../images/character_pages/cloud.svg);
+    background-repeat:no-repeat;
+    background-size:100%;
+  width:44%;
+    margin-top:50px;
+    a{
+      font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0) 64.06%),
+  linear-gradient(0deg, #10006C, #10006C);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.1em;
+  text-decoration:none;
+  padding-left:10px;
+  padding-top:8px;
+    }
+}
+  .button{
+    display:flex;
+    background-image:url(../images/character_pages/cloud.svg);
+    background-repeat:no-repeat;
+    background-size:100%;
+  width:44%;
+    margin-top:50px;
+    a{
+      font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0) 64.06%),
+  linear-gradient(0deg, #10006C, #10006C);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.1em;
+  text-decoration:none;
+  padding-left:10px;
+  padding-top:8px;
+    }
+  a:link{
+    text-decoration:none;
+  }
+  a:visited{
+    text-decoration:none;
+  }
+  a:hover{
+   color:yellow;
+  }
+      
+  }
+  
+  .kirby_image{
+  margin-left: -50px;
+  margin-top:302px;
+  animation: flyin 1.2s ease forwards;
+  p{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #9483FF, #9483FF);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+padding-left: 232px;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 58px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+  }
+  }
+  
+  
+  
+  .kirby_desc{
+    h1{
+      position:relative;
+      font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 82px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  top:250px;
+  margin-left:10px;
+  
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+      linear-gradient(0deg, #9483FF, #9483FF);
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    p{
+      font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(0deg, #9483FF, #9483FF);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  width:75%;
+  margin-left: 30px;
+  margin-top:300px;
+  
+    }
+  
+  }
+  .kirby_action_images{
+    position:relative;
+    margin-top:800px;
+    margin-left:-900px;
+    img:nth-child(1){
+      position:relative;
+  left:20px;
+  top:30px;
+    }
+    img:nth-child(2){
+      position:relative;
+  left:100px;
+  top:-190px;
+    }
+      }
+      .kirby_abilities{
+          h1{
+            position:relative;
+            font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 82px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+        top:1000px;
+        left:-1000px;
+    
+        
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+            linear-gradient(0deg, #9483FF, #9483FF);
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+            p{
+            position:relative;
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+          /* identical to box height */
+          letter-spacing: 0.1em;
+          top:1040px;
+          left:-1000px;
+         width:300%;
+              background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(0deg, #9483FF, #9483FF);
+              color:transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+            }
+          
+        
+      }
+      .kirby_image{
+        margin-left: -50px;
+        margin-top:302px;
+        animation: flyin 1.2s ease forwards;
+        }
+        
+        .waddledee_desc{
+            h1{
+                width:100%;
+              position:relative;
+              font-family: Kirby Classic;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 70px;
+          line-height: 82px;
+          /* identical to box height */
+          letter-spacing: 0.1em;
+          top:250px;
+          margin-left:10px;
+          
+              background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(0deg, #9483FF, #9483FF);
+              color:transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+            }
+            p{
+                width:100%;
+              font-family: Kirby Classic;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 29px;
+          letter-spacing: 0.1em;
+          background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+          linear-gradient(0deg, #9483FF, #9483FF);
+          color:transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+    z-index:10;
+          margin-left: 30px;
+          margin-top:300px;
+          
+            }
+          
+          } 
+        
+        .metaknight_desc{
+          h1{
+            position:relative;
+            font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 82px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+        top:250px;
+        margin-left:10px;
+        
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+            linear-gradient(0deg, #9483FF, #9483FF);
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+          p{
+            font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.1em;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, #9483FF, #9483FF);
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        width:70%;
+        margin-left: 30px;
+        margin-top:300px;
+        
+          }
+        
+        }
+        .waddle_action_images{
+            position:relative;
+            margin-top:850px;
+            margin-left:-300px;
+            img:nth-child(1){
+              position:relative;
+          left:-200px;
+          top:30px;
+            }
+            img:nth-child(2){
+              position:relative;
+          left:100px;
+          top:-190px;
+            }
+              }
+              @keyframes slide {
+                100% { left: 0; }
+            }
+            
+        .metaknight_action_images{
+          position:relative;
+          margin-top:880px;
+          margin-left:-570px;
+          img:nth-child(1){
+            position:relative;
+        left:-200px;
+        top:30px;
+          }
+          img:nth-child(2){
+            position:relative;
+        left:100px;
+        top:-190px;
+          }
+            }
+            .metaknight_abilities{
+                h1{
+                  position:relative;
+                  font-family: Kirby Classic;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 70px;
+              line-height: 82px;
+              /* identical to box height */
+              letter-spacing: 0.1em;
+              top:1000px;
+              left:-900px;
+          
+              
+                  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+                  linear-gradient(0deg, #9483FF, #9483FF);
+                  color:transparent;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                }
+                  p{
+                  position:relative;
+        font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+                /* identical to box height */
+                letter-spacing: 0.1em;
+                top:1040px;
+                left:-900px;
+               width:250%;
+                    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+                    linear-gradient(0deg, #9483FF, #9483FF);
+                    color:transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                  }
+                
+              
+            }
+  
+            @keyframes flyin {
+                to { 
+                  filter: blur(0);
+                  transform: scale(1);
+                  opacity: 1;
+                }
+              }

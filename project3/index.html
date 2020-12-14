@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<title> Kirby | Homepage </title>
+    </head>
+    <body class= "homepage">
+        <div class= "logo">
+            <img src="./images/logo.png">
+        </div>
+        <div class = "vector11">
+        </div>
+<nav>
+ 
+    <ul>
+        <li><a  href="index.html"><img src="./images/homepage/home1.png" onmouseover="this.src='./images/character/home2.png'"
+            onmouseout="this.src='./images/homepage/home1.png'"></a></li>
+        <li><a href="about.html"><img src="./images/homepage/about1.png"onmouseover="this.src='./images/character/about2.png'"
+            onmouseout="this.src='./images/homepage/about1.png'"></a></li>
+        <li><img src="./images/homepage/kirby.png" id="kirbys" data-aos="fade-up"></li>
+        <li><a  href="fanart.html"><img src="./images/homepage/fanart.png" onmouseover="this.src='./images/character/fanart2.png'"
+            onmouseout="this.src='./images/homepage/fanart.png'"></a></li>
+
+            <li><a href="characters.html"><img src="./images/homepage/character.png"onmouseover="this.src='./images/character/characters2.png'"
+                onmouseout="this.src='./images/homepage/character.png'"></a></li>
+      </ul>
+    </nav>
+
+<section class= "beginning">
+
+    <img src="./images/kirby.png">   
+
+
+
+<section class= "slogan">
+    <p> PINK. PUFFY. POWERFUL.</p>
+    <div class="cloud x1"></div>
+    <!-- Time for multiple clouds to dance around -->
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+</section>
+
+ 
+</section>
+<div class="vector1"></div>
+<section class= "est" >
+
+    <p>EST.</p>
+ <img src="./images/homepage/kirby_year.png">
+    <p> 1992</p>
+</section>
+
+
+<section class= "about_kirby" >
+<p> ABOUT KIRBY</p>
+<p>
+    Kirby is the titular pink puff and main protagonist of Nintendo's Kirby series of video games. He made his debutEST appearance in 1992, starring in Kirby's Dream Land. The series haESTs been running for over two decades, and over thirty titles have been released under Kirby's name, most of which are developed by HAL Laboratory, Inc. or published by HAL for co-developing studios.
+</p>
+<div class="clouds_link">
+    <a href= "about.html">LEARN MORE</a>
+</div>
+</section>
+<div class = "vector2"></div>
+
+<div class = "vector3" ></div>
+<section class= "fanart">
+    <h3> FEATURED ARTWORK</h3>
+    <div class="slideshow-container">
+        <a class="prev" onclick="plusDivs(-1)"> <img src= "./images/homepage/arrow_right.png"onmouseover="this.src='./images/homepage/arrow_left2.png'"
+            onmouseout="this.src='./images/homepage/arrow_right.png'"></a>
+        <div class="mySlides">
+        <img src="./images/homepage/fanart1.png" >
+        <img src="./images/homepage/fanart2.png" >
+        <img src="./images/homepage/fanart3.png" >
+    </div>
+    <div class="mySlides">
+        <img src="./images/homepage/fanart4.png" >
+        <img src="./images/homepage/fanart5.png" >
+        <img src="./images/homepage/fanart6.png" >
+    </div>
+    <div class="mySlides">
+        <img src="./images/homepage/fanart7.png" >
+        <img src="./images/homepage/fanart8.png" >
+        <img src="./images/homepage/fanart9.png" >
+    </div>
+    
+        <a class="next" onclick=" plusDivs(1)"> <img src= "./images/homepage/arrow_left.png"onmouseover="this.src='./images/homepage/arrow_right2.png'"
+            onmouseout="this.src='./images/homepage/arrow_left.png'"></a>
+      </div>
+      <div class="cloudss_link">
+        <a href= "fanart.html">MORE</a>
+    </div>
+</section>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+
+
+<section class ="characters">
+    <h3> MEET THE CHARACTERS</h3>
+    <div class=pictures>
+
+        <a href="metaknight.html">  <img src="./images/homepage/meta.png" data-aos="zoom-out"></a>
+
+        <a href="kingdee.html"> <img src="./images/homepage/king.png" data-aos="zoom-out"></a>
+    
+            <a href="waddledee.html"><img src="./images/homepage/waddledee.png"  data-aos="zoom-out"></a>
+</div>
+
+<div class= "names">
+    <a href="metaknight.html"><p> META KNIGHT</p></a>
+   <a href="kingdee.html">  <p> KING DEEDEE</p></a>
+   <a href="waddledee.html"><p> WADDLE DEE</p></a> 
+   <a href="characters.html" id="more" >MORE</a>
+
+</div>
+
+</section>
+<div class = "vector4" ></div>
+<footer>
+    <div class= "devices">
+       <p>ALL KIRBY GAMES ARE AVAILABLE ON:
+           <a href="https://www.nintendo.com/switch/"><img src="./images/character/switch.png"></a>
+       </p>
+   </div>
+   <div class= "cloudss">
+   <div class="marleylogo">
+   <h1>MARS</h1>
+   <div class="kirbysleeping"></div>
+   <h1>PRODUCTION</h1>
+   <h1>EST.2020</h1>
+   </div>
+   <ul>
+       <li><a class="active" href="index.html">HOME</a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="about.html">ABOUT </a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="fanart.html">FANART</a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="characters.html">CHARACTERS</a></li>  
+   </ul>
+   </div>
+   -->
+   </footer>
+   <script>
+       AOS.init({
+     duration: 1200,
+   })
+   </script>
+       </body>
+       </html>

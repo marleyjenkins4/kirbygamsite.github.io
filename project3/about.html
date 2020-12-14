@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title> Kirby | History </title>
+    </head>
+    <body class= "homepage">
+        <div class= "logo">
+            <img src="./images/logo.png" >
+        </div>
+
+<nav>
+    <div class="vector"></div>
+    <ul>
+        <li><a  href="index.html"><img src="./images/homepage/home1.png" onmouseover="this.src='./images/character/home2.png'"
+            onmouseout="this.src='./images/homepage/home1.png'"></a></li>
+        <li><a href="about.html"><img src="./images/homepage/about1.png"onmouseover="this.src='./images/character/about2.png'"
+            onmouseout="this.src='./images/homepage/about1.png'"></a></li>
+        <li><img src="./images/fanart/logo.png" id="kirbys"data-aos="fade-up"></li>
+        <li><a  href="fanart.html"><img src="./images/homepage/fanart.png" onmouseover="this.src='./images/character/fanart2.png'"
+            onmouseout="this.src='./images/homepage/fanart.png'"></a></li>
+
+            <li><a href="characters.html"><img src="./images/homepage/character.png"onmouseover="this.src='./images/character/characters2.png'"
+                onmouseout="this.src='./images/homepage/character.png'"></a></li>
+      </ul>
+    </nav>
+
+<section class= "evolution">
+<h1> THE EVOLUTION OF KIRBY</h1>
+<div class="images">
+<img src="./images/history/kirb.png" class="hi_kirby">
+<img src="./images/history/kirb2.png"class="hi_kirby">
+<img src="./images/history/kirb3.png"class="hi_kirby">
+</div>
+<div class= "vector1"></div>
+
+
+
+<img src= "./images/history/nintendo.png" class="nintendo">
+<div class="slideshow_container">
+
+    <a class="prev" onclick="plusDivs(-1)"><img src= "./images/homepage/arrow_right.png"onmouseover="this.src='./images/homepage/arrow_left2.png'"
+        onmouseout="this.src='./images/homepage/arrow_right.png'"></a>
+    <img src= "./images/history/first.png" class="mySlides"> 
+    <img src= "./images/history/second.png" class="mySlides"> 
+    <img src= "./images/history/thrid.png" class="mySlides"> 
+    <img src= "./images/history/fourth.png" class="mySlides"> 
+    <img src= "./images/history/fifth.png" class="mySlides"> 
+    <a class="next" onclick="plusDivs(1) "><img src= "./images/homepage/arrow_left.png"onmouseover="this.src='./images/homepage/arrow_right2.png'"
+        onmouseout="this.src='./images/homepage/arrow_left.png'"></a>
+
+</div>
+
+</section>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+
+<div class= "vector2"></div>
+
+
+<section class="kirby_creation">
+
+   <img src="images/history/star.png"data-aos="fade-up">
+   </div>
+   
+    <p>Kirby was conceived by Masahiro Sakurai, a video game designer then under HAL Laboratory's employment when designing a game for Nintendo's Game Boy. He was originally created as a blob placeholder sprite for the game, originally titled "Twinkle Popo" (ティンクル・ポポ Tinkuru Popo). </p>
+</section>
+
+<div class= "vector2"></div>
+<section class="kirby_creation2">
+
+ <p>
+Over time, Sakurai grew fond of the placeholder sprite, and preferred it over the conception of the original protagonist of the game it was being designed for, so Kirby became the star of his first game. Despite the developers keeping Kirby's model, he was known as ポポポ (Popopo) for a time before being renamed Kirby. 
+ </p>
+ <img src= "./images/history/transparentkirby.png" data-aos="fade-right">
+ </section>
+ <footer>
+    <div class= "devices">
+       <p>ALL KIRBY GAMES ARE AVAILABLE ON:
+           <a href="https://www.nintendo.com/switch/"><img src="./images/character/switch.png"></a>
+       </p>
+   </div>
+   <div class= "cloud">
+   <div class="marleylogo">
+   <h1>MARS</h1>
+   <div class="kirbysleeping"></div>
+   <h1>PRODUCTION</h1>
+   <h1>EST.2020</h1>
+   </div>
+   <ul>
+       <li><a class="active" href="index.html">HOME</a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="about.html">ABOUT </a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="fanart.html">FANART</a></li>
+       <img src="./images/stars_footer.svg">
+       <li><a href="characters.html">CHARACTERS</a></li>  
+   </ul>
+   </div>
+   -->
+   </footer>
+   <script>
+       AOS.init({
+     duration: 1200,
+   })
+   </script>
+       </body>
+       </html>

@@ -1,0 +1,551 @@
+
+@import "reset";
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+html
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x:hidden;
+
+}
+body{
+
+
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+
+
+}
+@font-face {
+    font-family: 'Kirby Classic';
+    src: url(../fonts/kirby-classic2.eot);
+    src: url(../fonts/kirby-classic2.ttf);
+  }
+
+  nav{
+
+    background:url(../images/history/navbar.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 377px;
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* step 6 */
+}
+nav li {
+  display: inline-block; /* step 1 */
+text-align:center;
+  margin-right: -4px; /* step 5 */
+  margin-top:130px;
+  margin-left: 90px;
+  padding:5px;
+}
+#kirbys{
+  position: relative;
+  top:100px;
+}
+/* common text style */
+nav a {
+    font-family: sans-serif;
+    height: 40%; /* vertically center */
+    line-height: 40%; /* vertically center */
+
+font-family: 'Kirby Classic';
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+  /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  filter: drop-shadow(0px 4px 4px #FFEC88);
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  }
+  nav a:hover {
+    background-color: #005f5f;
+  }
+   
+  nav a.active {
+    background-color: #eee;
+    color: #444;
+    cursor: default;
+  }
+  
+  #kirbys{
+    position: relative;
+    top:100px;
+  }
+  .vector{
+    position:relative; 
+  background:url(../images/homepage/vector1.svg);
+  background-size:cover;
+  width:100%;
+height: 76px;
+left: 0px;
+top:340.7px;
+
+}
+.vector1{
+    position: absolute; 
+  background:url(../images/homepage/vector1.svg);
+  background-size:cover;
+  width:100%;
+height: 76px;
+left: 0px;
+top:200px;
+
+}
+
+.logo{
+    position: absolute;
+    width: 300px;
+    height: 134px;
+    left:550px;
+    top: 100px;
+  }
+
+
+  .evolution{
+    height: 1334px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF9983;
+    h1{
+        position: relative;
+        top: 250px;
+        text-align:center; 
+        font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 94px;
+        /* identical to box height */
+        
+        
+        color: #FF8C8C;  
+    }
+.images{
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+    top:10%;
+
+
+top: 250px;
+}
+
+  }
+  .nintendo{
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+    top:10%;
+top:250px;
+  }
+
+  .vector1{
+      position:relative;
+      background:url(../images/history/vector.png);
+      background-size: contain;
+      left:  0px;
+top: 1070px;
+background-repeat: repeat-x;
+
+  }
+  .kirby_creation{
+    height: 385px;
+    padding:20px;
+    padding-top:60px;
+img{
+    float:left;
+}
+p{
+position: relative;
+    font-family: Kirby Classic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+top:50px;
+    background: linear-gradient(0deg, #C27260, #C27260);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+    letter-spacing: 0.01em;
+}
+  }
+
+
+
+  .vector2{
+
+    background:url(../images/history/vector.png);
+    background-size: contain;
+background-repeat: repeat-x;
+position: relative;
+width: 100%;
+height: 76px;
+left: 0px;
+top: 500px;
+
+}
+
+  .kirby_creation2{
+    height: 456px;
+    padding:20px;
+    padding-top:100px;
+    p{
+        float:left;
+        width:66%;
+        font-family: Kirby Classic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+    top:50px;
+        background: linear-gradient(0deg, #C27260, #C27260);
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    
+        letter-spacing: 0.01em;
+    }
+    img{
+        position:relative;
+        top:-120px;
+        left:120px;
+    }
+  }
+  .vector3{
+
+    background:url(../images/history/vector.png);
+    background-size: contain;
+background-repeat: repeat-x;
+position: relative;
+width: 100%;
+height: 76px;
+left: 0px;
+top: 500px;
+
+}
+
+/* SLIDE SHOW */
+.slideshow_container{
+  img{
+    position: relative;
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 51.37%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+    top:10%;
+top:-524px;
+
+  
+  }  
+}
+/* Next & previous buttons */
+.prev {
+    position: absolute;
+    width: 65.5px;
+    height: 72.5px;
+    left: 200px;
+
+    top: 1600px;
+    
+  }
+  .next{
+    position: absolute;
+    width: 80px;
+    height: 73px;
+    left: 1180px;
+    top: 1600px;
+    
+  }
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+footer{
+
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    height: 366px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF9983;
+
+  }
+  
+  .devices{
+    display:inline-block;
+    margin-left: 413px;
+    vertical-align: text-top;
+    img{
+      position:relative;
+    
+      vertical-align:middle;
+    }
+  }
+  .devices > p{
+    margin-top:20px;
+    font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  
+  letter-spacing: 0.1em;
+ 
+  background: rgba(255, 140, 140, 1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  }
+  .cloud{
+    background:url(../images/footer.svg);
+    background-size:cover;
+    background-repeat: repeat-x;
+    height:100%;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center; /* step 6 */
+  }
+  nav li {
+      display: inline-block; /* step 1 */
+  text-align:center;
+      margin-right: -4px; /* step 5 */
+      margin-top:250px;
+      margin-left:  100px;
+      padding:45px;
+    }
+  
+    nav{
+      display:flex;
+      
+  
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center; /* step 6 */
+  }
+   li {
+      display: inline-block; /* step 1 */
+  text-align:center;
+   
+      margin-top:110px;
+   
+      padding:20px;
+    }
+    a{
+      text-decoration:none;
+      font-family: Kohinoor Devanagari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  
+  color: #A67276;
+    }
+  a:hover{
+    color:yellow;
+  }
+  }
+  .marleylogo{
+   position: relative;
+   top:100px;
+  
+    margin-left:-90px;
+    text-align:center;
+    
+    h1:nth-child(1){
+  
+      font-family: Kirby Classic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 41px;
+      /* identical to box height */
+      
+      
+      color: #F3A6AC;
+      }
+      h1:nth-child(3){
+  
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  
+  color: #A67276;
+      }
+      h1:nth-child(4){
+        font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  
+  color: #F3A6AC;
+  animation: logo-animation linear 4s;
+  animation-iteration-count:  infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: logo-animation linear 4s;
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: logo-animation linear 4s;
+  -moz-animation-iteration-count:  infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: logo-animation linear 4s;
+  -o-animation-iteration-count:  infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: logo-animation linear 4s;
+  -ms-animation-iteration-count:  infinite;
+  -ms-transform-origin: 50% 50%;
+  
+      }
+      
+    
+  }
+  .kirbysleeping{
+    background:url(../images/wakeup.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 0;
+      margin: 0;
+    margin:0;
+    width: 80px;
+  height: 52px;
+  margin-left:720px;
+  }
+  
+  @keyframes image-slide {
+    0% { transform: translateX(-100px) scale(0); }
+   
+  }
+  @keyframes flyin {
+    to { 
+      filter: blur(0);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  @-moz-keyframes logo-animation{
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  
+  @-webkit-keyframes logo-animation {
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  
+  @-o-keyframes logo-animation {
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  
+  @-ms-keyframes logo-animation {
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  

@@ -1,0 +1,1109 @@
+@import "reset";
+
+@font-face {
+    font-family: 'Kirby Classic';
+    src: url(../fonts/kirby-classic2.eot);
+    src: url(../fonts/kirby-classic2.ttf);
+  }
+  html
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+  
+  }
+  #kirbys{
+    position: absolute;
+    top:10px;
+  }
+  .vector11{
+    position: absolute; 
+  background:url(../images/homepage/vector1.svg);
+  background-size:cover;
+  width:100%;
+height: 76px;
+left: 0px;
+top:290px;
+
+}
+nav{
+    display:flex;
+    background:url(../images/homepage/navbar_background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 377px;
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* step 6 */
+}
+nav li {
+    display: inline-block; /* step 1 */
+text-align:center;
+    margin-right: -4px; /* step 5 */
+    margin-top:200px;
+    margin-left: 70px;
+    padding:45px;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin-top:140px;
+margin-left:-800px;
+    width:100%;
+  }
+
+  .mySlides{
+    display:inline-block;
+    margin-top:-40px;
+    padding:30px;
+    display:none;
+  }
+
+
+/* Next & previous buttons */
+.prev {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-left:-100px;
+    margin-top: -100px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-left:800px;
+    margin-top: -100px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  #kirbys{
+    position: absolute;
+    display:flex;
+    justify-items:center;
+    left: 550px;
+    top: 230px;
+  }
+  .logo{
+    position: absolute;
+    width: 300px;
+    height: 134px;
+    left:550px;
+    top: 81px;
+  }
+  #clouds{
+    padding: 100px 0;
+    background: #c9dbe9;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  }
+  
+  /*Time to finalise the cloud shape*/
+  .cloud {
+    width: 200px; height: 60px;
+    background: #fff;
+    
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    
+    position: relative; 
+  }
+  
+  .cloud:before, .cloud:after {
+    content: '';
+    position: absolute; 
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; 
+    top: -15px; left: 10px;
+    
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+  }
+  
+  .cloud:after {
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+  }
+  
+  /*Time to animate*/
+  .x1 {
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+  }
+  
+  /*variable speed, opacity, and position of clouds for realistic effect*/
+  .x2 {
+    left: 200px;
+    
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; /*opacity proportional to the size*/
+    
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+  }
+  
+  .x3 {
+    left: -250px; top: -200px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+  }
+  
+  .x4 {
+    left: 470px; top: -250px;
+    
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+  }
+  
+  .x5 {
+    left: -150px; top: -150px;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+  }
+  
+  @-webkit-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+  }
+  @-moz-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+  }
+  @-o-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+  } 
+/* common text style */
+nav a {
+    font-family: sans-serif;
+    height: 40%; /* vertically center */
+    line-height: 40%; /* vertically center */
+
+font-family: 'Kirby Classic';
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+  /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  filter: drop-shadow(0px 4px 4px #FFEC88);
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  }
+  nav a:hover {
+    background-color: #005f5f;
+  }
+   
+  nav a.active {
+    background-color: #eee;
+    color: #444;
+    cursor: default;
+  }
+
+
+
+  .beginning{
+    margin-top:-60px;
+      flex-direction:row;
+      background: linear-gradient(180deg, #BFECFF 0%, rgba(255, 255, 255, 0) 100%), #ACE5FF;
+      width:100%;
+      height: 861px;
+      img{
+        position:absolute;
+  
+height: 536px;
+left:280px;
+top: 519px;
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+animation: swinging 3.5s ease-in-out forwards infinite;
+      }
+
+  }
+
+  .slogan{
+    display:block;
+    position: absolute;
+
+left: 500px;
+top: 457px;
+    display:block;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, #FFFFFF 97.4%),
+linear-gradient(0deg, #FF67BB, #FF67BB);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+
+
+  }
+  .vector1{
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    left:0px;
+    top: 1150px;
+    background:url(../images/homepage/shape.png);
+    background-size:contain;
+    background-repeat:repeat-x;
+    
+    
+    
+
+  }
+  .vector2{
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    left:0px;
+    top: 1250px;
+    background:url(../images/homepage/shape.png);
+    background-size:contain;
+    background-repeat:repeat-x;
+    
+   
+  }
+  .vector3{
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    left: 0px;
+    top:1710px;
+    background:url(../images/homepage/shape.png);
+    background-size:contain;
+    background-repeat:repeat-x;
+    
+   
+  }
+  .vector4{
+
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    left: 0px;
+    top: 2210px;
+    background:url(../images/homepage/shape.png);
+    background-size:contain;
+    background-repeat:repeat-x;
+    
+   
+
+  }
+
+ 
+ 
+  .est{
+      display:flex;
+     
+      width:100%;
+      height: 98px;
+      background: linear-gradient(180deg, #FFBFC9 0%, #FFBFCA 44.79%, #FD9ED7 77.6%), #C4C4C4;
+  
+p{
+    display:inline-flex;
+
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+padding-top:30px;
+margin-left:400px;
+color: #0B0707;
+}
+img{
+    position: absolute;
+    width: 494px;
+    height: 357px;
+    left: 490px;
+    top: 900px;
+}
+
+  }
+
+.about_kirby{
+    display:flex;
+    margin-top:-10px;
+    flex-direction:row;
+    background: url(../images/homepage/about.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity: 0.8;
+    height: 467px;
+
+p:nth-child(1){
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+width:100%;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+padding-left:550px;
+padding-top:60px;
+}
+p:nth-child(2){
+
+    font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.13em;
+color: #FFFFFF;
+position: relative;
+top:170px;
+left:-430px;
+width: 3000px;
+}
+}
+
+.clouds_link{
+  background:url(../images/homepage/clouds.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100px;
+  left: 600px;
+  top: 1650px;
+width:300px;
+
+a{
+  position: relative;          /* where the next element will be automatically positioned */
+  display: inline-block;       /* causes element width to shrink to fit content */
+  left: 25%;                   /* moves left side of image/element to center of parent element */
+  transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+  top:26%;
+  text-decoration:none;
+  font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #733973;
+}
+a:hover{
+  color:black;
+}
+}
+.cloudss_link{
+  background:url(../images/homepage/clouds.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100px;
+  left: 650px;
+  top: 2160px;
+width:300px;
+
+a{
+  position: relative;          /* where the next element will be automatically positioned */
+  display: inline-block;       /* causes element width to shrink to fit content */
+  left: 25%;                   /* moves left side of image/element to center of parent element */
+  transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+  top:26%;
+  text-decoration:none;
+  font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #733973;
+}
+a:hover{
+  color:black;
+}
+}
+.fanart{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.46%, #FFC304 100%), linear-gradient(180deg, #FFC304 -127.8%, #FFF9BD -66.35%);
+    background-blend-mode: normal, darken;
+    height: 506px;
+    
+    h3{
+      position: relative;          /* where the next element will be automatically positioned */
+display: inline-block;       /* causes element width to shrink to fit content */
+left: 75%;                   /* moves left side of image/element to center of parent element */
+transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+top:10%;
+width:100%;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #EA4B33;
+    }
+}
+.characters{
+    display: flex;
+    flex-direction:row;
+
+    background: url(../images/character/stars.gif);
+    background-size:cover;
+    background-repeat:  no-repeat;
+    height:560px;
+  h3{
+
+      position: relative;          /* where the next element will be automatically positioned */
+display: inline-block;       /* causes element width to shrink to fit content */
+left:85%;                   /* moves left side of image/element to center of parent element */
+transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+top:10%;
+width:100%;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #9483FF, #9483FF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+    }
+  
+}
+
+.pictures{
+display:block;
+ margin-left: -1045px;  
+
+    margin-top:160px;
+
+}
+
+
+.names > a{
+padding:30px;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+letter-spacing: 0.1em;
+  display:inline-block;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(0deg, #9483FF, #9483FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; 
+
+a:hover{
+  color:white;
+}
+
+}
+#more{
+  position: absolute;
+left: 300px;
+top:40px;
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #9483FF, #9483FF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+-moz-background-clip: text;
+-moz-text-fill-color: transparent; 
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+letter-spacing: 0.1em;
+}
+.names{
+  position: absolute;
+
+left: 400px;
+top: 2687px;
+}
+
+
+.kirby{
+  display:flex;
+
+  position: absolute;
+  height: 1354px;
+  left: 0px;
+  top: -44px;
+  object-fit:cover;
+  object-position:50% 50%;
+  background-image:url(../images/character_pages/background_stars.png);
+  background-size: 100%;
+  background-repeat:no-repeat;
+padding:0px;
+margin:0px;
+}
+
+.button{
+  display:flex;
+  background-image:url(../images/character_pages/cloud.svg);
+  background-repeat:no-repeat;
+  background-size:100%;
+width:44%;
+  margin-top:50px;
+  a{
+    font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+/* identical to box height */
+background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0) 64.06%),
+linear-gradient(0deg, #10006C, #10006C);
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+letter-spacing: 0.1em;
+text-decoration:none;
+padding-left:10px;
+padding-top:8px;
+  }
+a:link{
+  text-decoration:none;
+}
+a:visited{
+  text-decoration:none;
+}
+a:hover{
+ color:yellow;
+}
+    
+}
+
+.kirby_image{
+margin-left: -50px;
+margin-top:302px;
+}
+
+
+
+.kirby_desc{
+  h1{
+    position:relative;
+    font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 82px;
+/* identical to box height */
+letter-spacing: 0.1em;
+top:250px;
+margin-left:10px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #9483FF, #9483FF);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  p{
+    font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+letter-spacing: 0.1em;
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #9483FF, #9483FF);
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+width:75%;
+margin-left: 30px;
+margin-top:300px;
+
+  }
+
+}
+.kirby_action_images{
+  position:relative;
+  margin-top:800px;
+  margin-left:-900px;
+  img:nth-child(1){
+    position:relative;
+left:20px;
+top:30px;
+  }
+  img:nth-child(2){
+    position:relative;
+left:100px;
+top:-190px;
+  }
+    }
+    .kirby_abilities{
+        h1{
+          position:relative;
+          font-family: Kirby Classic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 70px;
+      line-height: 82px;
+      /* identical to box height */
+      letter-spacing: 0.1em;
+      top:1000px;
+      left:-1000px;
+  
+      
+          background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+          linear-gradient(0deg, #9483FF, #9483FF);
+          color:transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+          p{
+          position:relative;
+font-family: Kirby Classic;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 23px;
+letter-spacing: 0.1em;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+        top:1040px;
+        left:-1000px;
+       width:300%;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+            linear-gradient(0deg, #9483FF, #9483FF);
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+        
+      
+    }
+    .kirby_image{
+      margin-left: -50px;
+      margin-top:302px;
+      }
+      
+      
+      
+      .metaknight_desc{
+        h1{
+          position:relative;
+          font-family: Kirby Classic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 70px;
+      line-height: 82px;
+      /* identical to box height */
+      letter-spacing: 0.1em;
+      top:250px;
+      margin-left:10px;
+      
+          background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+          linear-gradient(0deg, #9483FF, #9483FF);
+          color:transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+        p{
+          font-family: Kirby Classic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: 0.1em;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+      linear-gradient(0deg, #9483FF, #9483FF);
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      width:70%;
+      margin-left: 30px;
+      margin-top:300px;
+      
+        }
+      
+      }
+      .metaknight_action_images{
+        position:relative;
+        margin-top:800px;
+        margin-left:-900px;
+        img:nth-child(1){
+          position:relative;
+      left:-200px;
+      top:30px;
+        }
+        img:nth-child(2){
+          position:relative;
+      left:100px;
+      top:-190px;
+        }
+          }
+          .metaknight_abilities{
+              h1{
+                position:relative;
+                font-family: Kirby Classic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 70px;
+            line-height: 82px;
+            /* identical to box height */
+            letter-spacing: 0.1em;
+            top:1000px;
+            left:-900px;
+        
+            
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+                linear-gradient(0deg, #9483FF, #9483FF);
+                color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+              }
+                p{
+                position:relative;
+      font-family: Kirby Classic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 23px;
+      letter-spacing: 0.1em;
+              /* identical to box height */
+              letter-spacing: 0.1em;
+              top:1040px;
+              left:-900px;
+             width:250%;
+                  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+                  linear-gradient(0deg, #9483FF, #9483FF);
+                  color:transparent;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                }
+              
+            
+          }
+
+          @-webkit-keyframes swinging{
+            0%{-webkit-transform: rotate(10deg);}
+            50%{-webkit-transform: rotate(-5deg)}
+            100%{-webkit-transform: rotate(10deg);}
+        }
+         
+        @keyframes swinging{
+            0%{transform: rotate(10deg);}
+            50%{transform: rotate(-5deg)}
+            100%{transform: rotate(10deg);}
+        }
+
+
+          footer{
+
+            left:0px;
+            bottom:0px;
+            height:30px;
+            width:100%;
+            height: 366px;
+            background: #1D0042;
+          }
+          
+          .devices{
+            display:inline-block;
+            margin-left: 413px;
+            vertical-align: text-top;
+            img{
+              position:relative;
+            
+              vertical-align:middle;
+            }
+          }
+          .devices > p{
+            margin-top:20px;
+            font-family: Kirby Classic;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 35px;
+          /* identical to box height */
+          
+          letter-spacing: 0.1em;
+          
+          color: white;
+          }
+          .cloudss{
+            background:url(../images/footer.svg);
+            background-size:cover;
+            background-repeat: repeat-x;
+            height:100%;
+            nav ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              text-align: center; /* step 6 */
+          }
+          nav li {
+              display: inline-block; /* step 1 */
+          text-align:center;
+              margin-right: -4px; /* step 5 */
+              margin-top:250px;
+              margin-left:  100px;
+              padding:45px;
+            }
+          
+            nav{
+              display:flex;
+              
+          
+          }
+          ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              text-align: center; /* step 6 */
+          }
+           li {
+              display: inline-block; /* step 1 */
+          text-align:center;
+           
+              margin-top:110px;
+           
+              padding:20px;
+            }
+            a{
+              text-decoration:none;
+              font-family: Kohinoor Devanagari;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          
+          color: #A67276;
+            }
+          a:hover{
+            color:yellow;
+          }
+          }
+          .marleylogo{
+           position: relative;
+           top:100px;
+          
+            margin-left:-90px;
+            text-align:center;
+            
+            
+            h1:nth-child(1){
+          
+              font-family: Kirby Classic;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 35px;
+              line-height: 41px;
+              /* identical to box height */
+              
+              
+              color: #F3A6AC;
+              }
+              h1:nth-child(3){
+          
+          font-family: Kirby Classic;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 23px;
+          
+          color: #A67276;
+              }
+              h1:nth-child(4){
+                font-family: Kirby Classic;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 23px;
+          
+          color: #F3A6AC;
+         
+              }
+              
+            
+          }
+          .kirbysleeping{
+            background:url(../images/wakeup.gif);
+            background-size:cover;
+            background-repeat: no-repeat;
+            padding: 0;
+              margin: 0;
+            margin:0;
+            width: 80px;
+          height: 52px;
+          margin-left:720px;
+          }
+          
+
+  @keyframes star {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    10% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0.1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+
+  .leFlyInBottom span { animation-name: leFlyInBottom }
+@keyframes leFlyInBottom {
+    0% {
+        transform: translate(0px, 80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, -50px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+
+  
+  @-o-keyframes logo-animation {
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  
+  @-ms-keyframes logo-animation {
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  

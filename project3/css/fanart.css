@@ -1,0 +1,916 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'Kirby Classic';
+  src: url(../fonts/kirby-classic2.eot);
+  src: url(../fonts/kirby-classic2.ttf);
+}
+
+nav {
+  background: url(../images/homepage/navbar_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 377px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* step 6 */
+}
+
+nav li {
+  display: inline-block;
+  /* step 1 */
+  text-align: center;
+  margin-right: -4px;
+  /* step 5 */
+  margin-top: 140px;
+  margin-left: 90px;
+  padding: 5px;
+}
+
+#kirbys {
+  position: relative;
+  top: 100px;
+}
+
+/* common text style */
+nav a {
+  font-family: sans-serif;
+  height: 40%;
+  /* vertically center */
+  line-height: 40%;
+  /* vertically center */
+  font-family: 'Kirby Classic';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  /* Fallback: Set a background color. */
+  background-color: red;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-filter: drop-shadow(0px 4px 4px #FFEC88);
+          filter: drop-shadow(0px 4px 4px #FFEC88);
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+nav a:hover {
+  background-color: #005f5f;
+}
+
+nav a.active {
+  background-color: #eee;
+  color: #444;
+  cursor: default;
+}
+
+.vector1 {
+  position: absolute;
+  background: url(../images/homepage/vector1.svg);
+  background-size: cover;
+  width: 100%;
+  height: 76px;
+  left: 0px;
+  top: 345px;
+}
+
+.fanart_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 424px;
+  width: 100%;
+  justify-items: center;
+  padding-left: 400px;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.fanart_logo p:nth-child(1) {
+  position: relative;
+  background: url(../images/fanart/KIRBY.png);
+  background-size: contain;
+  width: 206px;
+  top: 70px;
+  left: -40px;
+  background-repeat: no-repeat;
+}
+
+.fanart_logo p:nth-child(2) {
+  background: url(../images/fanart/kirby_smile_logo.png);
+  background-size: contain;
+  width: 206px;
+  -webkit-animation: wiggle 2.5s infinite;
+          animation: wiggle 2.5s infinite;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+}
+
+.fanart_logo p:nth-child(3) {
+  position: relative;
+  background: url(../images/fanart/FANART.png);
+  background-size: contain;
+  width: 286px;
+  background-repeat: no-repeat;
+  top: 70px;
+  left: 40px;
+}
+
+.fanart_logo p:nth-child(4) {
+  position: absolute;
+  width: 891px;
+  height: 42px;
+  text-align: center;
+  top: 700px;
+  left: 300px;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 49px;
+  color: #295197;
+}
+
+.logo {
+  position: absolute;
+  width: 300px;
+  height: 134px;
+  left: 550px;
+  top: 81px;
+}
+
+.fanart {
+  background: #F0FAFF;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.first {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px 10px 0;
+}
+
+.second {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.second-b {
+  padding: 20px;
+}
+
+.first-b {
+  padding: 20px;
+}
+
+.hello {
+  width: 100%;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #F0FAFF;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: none;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: pink;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: yellow;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column {
+  text-align: center;
+}
+
+.column a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #000000, #000000);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
+
+.column a:hover {
+  color: yellow;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #F0FAFF;
+  height: 230px;
+}
+
+.submission {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 400px;
+  position: relative;
+  /* where the next element will be automatically positioned */
+  display: inline-block;
+  /* causes element width to shrink to fit content */
+  left: 40%;
+  /* moves left side of image/element to center of parent element */
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  /* centers image/element on "left: 50%" position */
+  top: 30%;
+}
+
+.submission img:nth-child(1) {
+  width: 53px;
+  height: 46px;
+  left: 344px;
+  top: 4184px;
+}
+
+.submission img:nth-child(3) {
+  width: 53px;
+  height: 46px;
+  left: 80px;
+  top: 4186px;
+}
+
+.submission a {
+  text-decoration: none;
+  width: 100%;
+  height: 41px;
+  left: 405px;
+  top: 4186px;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 49px;
+  color: #295197;
+}
+
+.submission a:hover {
+  color: pink;
+}
+
+.fanarts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #F0FAFF;
+  height: 1000px;
+}
+
+.fanarts h1 {
+  /* Submit Your Fanart */
+  position: absolute;
+  width: 100%;
+  height: 87px;
+  left: 300px;
+  top: 507px;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 81px;
+  color: #295197;
+}
+
+.fanarts img {
+  position: absolute;
+  width: 413px;
+  height: 46px;
+  left: 450px;
+  top: 580px;
+}
+
+.fanarts p {
+  position: absolute;
+  width: 1093px;
+  height: 63px;
+  left: 200px;
+  top: 660px;
+  text-align: center;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 49px;
+  text-align: center;
+  color: #295197;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 11px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(0.01%, rgba(255, 255, 255, 0)), color-stop(99.99%, #C5FBFF)), #FFFFFF;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0.01%, #C5FBFF 99.99%), #FFFFFF;
+  border: 1px solid #295197;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.comments {
+  position: relative;
+  /* where the next element will be automatically positioned */
+  display: inline-block;
+  /* causes element width to shrink to fit content */
+  left: 50%;
+  /* moves left side of image/element to center of parent element */
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  /* centers image/element on "left: 50%" position */
+  top: 1%;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 65px;
+  color: #295197;
+}
+
+form {
+  position: relative;
+  /* where the next element will be automatically positioned */
+  display: inline-block;
+  /* causes element width to shrink to fit content */
+  left: 50%;
+  /* moves left side of image/element to center of parent element */
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  /* centers image/element on "left: 50%" position */
+  top: 1%;
+  margin-top: 400px;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 10px;
+  line-height: 65px;
+  color: #295197;
+}
+
+.thanks {
+  height: 1438px;
+  padding: 200px;
+  background: #F0FAFF;
+}
+
+.thanks h3 {
+  text-align: center;
+  width: 100%;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 81px;
+  color: #295197;
+}
+
+.thanks img {
+  position: relative;
+  /* where the next element will be automatically positioned */
+  display: inline-block;
+  /* causes element width to shrink to fit content */
+  left: 50%;
+  /* moves left side of image/element to center of parent element */
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  /* centers image/element on "left: 50%" position */
+}
+
+.thanks p {
+  text-align: center;
+  font-family: Kannada Sangam MN;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 49px;
+  padding: 30px;
+  color: #295197;
+}
+
+.thanks a {
+  text-decoration: none;
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.01%, rgba(255, 255, 255, 0)), color-stop(64.06%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(#10006C), to(#10006C));
+  background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0) 64.06%), linear-gradient(0deg, #10006C, #10006C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  position: relative;
+  /* where the next element will be automatically positioned */
+  display: inline-block;
+  /* causes element width to shrink to fit content */
+  left: 50%;
+  /* moves left side of image/element to center of parent element */
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  /* centers image/element on "left: 50%" position */
+  top: 10%;
+}
+
+.thanks a:hover {
+  color: pink;
+}
+
+.rows {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 100px;
+  height: 609px;
+  width: 100%;
+}
+
+footer {
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  height: 366px;
+  background: #F0FAFF;
+}
+
+.devices {
+  display: inline-block;
+  margin-left: 413px;
+  vertical-align: text-top;
+}
+
+.devices img {
+  position: relative;
+  vertical-align: middle;
+}
+
+.devices > p {
+  margin-top: 20px;
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #295197;
+}
+
+.cloud {
+  background: url(../images/footer.svg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 100%;
+}
+
+.cloud nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* step 6 */
+}
+
+.cloud nav li {
+  display: inline-block;
+  /* step 1 */
+  text-align: center;
+  margin-right: -4px;
+  /* step 5 */
+  margin-top: 250px;
+  margin-left: 100px;
+  padding: 45px;
+}
+
+.cloud nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cloud ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* step 6 */
+}
+
+.cloud li {
+  display: inline-block;
+  /* step 1 */
+  text-align: center;
+  margin-top: 110px;
+  padding: 20px;
+}
+
+.cloud a {
+  text-decoration: none;
+  font-family: Kohinoor Devanagari;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #A67276;
+}
+
+.cloud a:hover {
+  color: yellow;
+}
+
+.marleylogo {
+  position: relative;
+  top: 100px;
+  margin-left: -90px;
+  text-align: center;
+}
+
+.marleylogo h1:nth-child(1) {
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+  color: #F3A6AC;
+}
+
+.marleylogo h1:nth-child(3) {
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #A67276;
+}
+
+.marleylogo h1:nth-child(4) {
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F3A6AC;
+  animation: logo-animation linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: logo-animation linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: logo-animation linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: logo-animation linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: logo-animation linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+.kirbysleeping {
+  background: url(../images/wakeup.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  width: 80px;
+  height: 52px;
+  margin-left: 720px;
+}
+
+@-webkit-keyframes image-slide {
+  0% {
+    -webkit-transform: translateX(-100px) scale(0);
+            transform: translateX(-100px) scale(0);
+  }
+}
+
+@keyframes image-slide {
+  0% {
+    -webkit-transform: translateX(-100px) scale(0);
+            transform: translateX(-100px) scale(0);
+  }
+}
+
+@-webkit-keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes logo-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.990099773451273;
+  }
+  101% {
+    opacity: 0.99;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=fanart.css.map */

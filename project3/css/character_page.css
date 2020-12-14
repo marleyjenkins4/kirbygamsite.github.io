@@ -1,0 +1,133 @@
+/**** CHARACTER PAGE **/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Kirby Classic';
+  src: url(../fonts/kirby-classic2.eot);
+  src: url(../fonts/kirby-classic2.ttf);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  /* step 6 */
+}
+
+nav li {
+  display: inline-block;
+  /* step 1 */
+  text-align: center;
+  margin-right: -4px;
+  /* step 5 */
+  margin-top: 250px;
+  margin-left: 100px;
+  padding: 45px;
+}
+
+.character_info {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9483FF), to(rgba(255, 255, 255, 0))), #9483FF;
+  background: linear-gradient(180deg, #9483FF 0%, rgba(255, 255, 255, 0) 100%), #9483FF;
+  height: 1000px;
+}
+
+.character_info h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding-left: 800px;
+  padding-top: 408px;
+  font-family: Kirby Classic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+
+.character_info p:nth-child(2) {
+  position: relative;
+  font-family: Karma;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 44px;
+  left: -440px;
+  top: 490px;
+  color: #10006C;
+}
+
+.kirbs {
+  position: relative;
+  width: 1010px;
+  height: 981px;
+  left: -3px;
+  top: -808px;
+}
+
+.each_characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: purple;
+  margin-top: -1000px;
+  height: 746px;
+}
+/*# sourceMappingURL=charaacter_page.css.map */
