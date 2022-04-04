@@ -13,3 +13,6 @@ Project Created in January 2021
 
 <p> This Project centers around  creating an online community for gamers. This site is created based off on the Kirby games and allows fans to explore and learn the history of the game along with the characters. 
  Users are also allowed to post, comment and like, fanart of their choosing. </p>
+ 
+ <p> Click link to explore site </p>
+ <p> https://marleyjenkins4.github.io/Project3/project3/index.html </p>
