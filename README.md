@@ -11,5 +11,5 @@ KProject Created in January 2021
   <li> SCSS </li>
 </ul>
 
-<p> This Project centers around  creating an online community for gamers. This site is created based off on the Kirby games and allowing fans to explore and learn the history of the game along with the characters. 
+<p> This Project centers around  creating an online community for gamers. This site is created based off on the Kirby games and allows fans to explore and learn the history of the game along with the characters. 
  Users are also allowed to post, comment and like, fanart of their choosing. </p>
