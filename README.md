@@ -1,4 +1,4 @@
-KProject Created in January 2021
+Project Created in January 2021
 <h1> Kirby Game Site </h1>
 
 
