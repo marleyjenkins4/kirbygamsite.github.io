@@ -15,4 +15,4 @@ Project Created in January 2021
  Users are also allowed to post, comment and like, fanart of their choosing. </p>
  
  <p> Click link to explore site </p>
- <p> https://marleyjenkins4.github.io/Project3/project3/index.html </p>
+ <p> https://marleyjenkins4.github.io/kirbygamsite.github.io/project3/index.html </p>
